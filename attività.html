@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="it">
+  <head>
+  <meta charset="utf-8">
+  <title>Lost in Japan/attività</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="lo scopo è quello di dare maggiori informazioni pratiche a tutti coloro che fossero interessati a fare un viaggio in Giappone.">
+  <meta name="author" content="Themefisher Paolo Piersigilli">
+  <meta name="generator" content="Hugo 0.74.3" />
+<!--Main css-->
+  <link rel="stylesheet" href="stile/style.css">
+<!--CSS bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!--Css icon bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!--font link-->
+<link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
+  <!--Css leaflet-->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!--Favicon-->
+<link href="IMG/favicon.ico" rel="icon" type="image/x-icon">
+
+  <!-- Metadati Dublincore -->
+  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+  <meta name="DC.Title" content="Viaggio in Giappone">
+  <meta name="DC.Creator" content="Paolo Piersigilli">
+  <meta name="DC.Subject" content="Viaggio in Giappone">
+  <meta name="DC.Description" content="Un aiuto per tutti coloro che vogliono organizzare il proprio viaggio in Giappone ma non sanno bene ancora come muoversi e organizzarsi">
+  <meta name="DC.Publisher" content="Github">
+  <meta name="DC.Date" content="15/01/2025">
+  <meta neme="DC.Format" content="Risorsa digitale">
+  <meta name="DC.Language" content="it">
+  <style>
+     h1{
+        padding-top: 70px;
+        }
+     
+         body {
+      background-color: #ecd8c6;
+      font-family: 'Afacad';font-size: 22px;
+    }
+      #card-title {
+        font-size: 25px;
+      }
+      #map {
+        width: 800px;
+        height: 400px;
+        margin-left: 150px;
+        margin-bottom: -50px;
+        border: groove;
+        border-width: 5px;
+        border-color: black;
+      }
+  </style>
+</head>
+
+<body>
+  <!--barra di navigazione-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="index.html">
+<i class="bi bi-airplane-engines-fill"></i>
+   Lost in Japan</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Alloggi</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Attività
+        </a>
+        <!--perchè qui il dropdown menù non si apre?-->
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="attività.html">Tokyo</a>
+          <a class="dropdown-item" href="#">Kyoto</a>
+          <a class="dropdown-item" href="#">Osaka</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Prima di partire
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Budget</a>
+          <a class="dropdown-item" href="#">Accesso a Internet</a>
+          <a class="dropdown-item" href="#">Cambio di valuta</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="chi_siamo.html">Chi siamo</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca qui</button>
+    </form>
+  </div>
+</nav>
+ <div class="header text-md-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9 mx-auto">
+         <!--fine barra di navigazione-->
+
+          <!--briciole di pane-->
+          <h1 class="mb-4"><strong>TOKYO</strong></h1> 
+          <ul class="list-inline">
+            <li class="list-inline-item"><a class="text-default" style="color:black;" href="index.html">Home
+                &nbsp; &nbsp; ></a></li>
+            <li class="list-inline-item"><a class="text-default" style="color:black" href="attività.html">Attività
+                &nbsp; &nbsp; </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+<!--fine briciole di pane-->
+
+<!--album card-->
+<div class="album py-5-center">
+    <div class="container">
+      <div class="row">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <img src="IMG/skytree.jpg" alt="skytree"class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text id="card-title" x="50%" y="50%" fill="#eceeef" dy=".3em">Tokyo Skytree</text></img>
+
+            <div class="card-body">
+              <p class="card-text">Il Tokyo Skytree, che domina lo skyline della capitale, è alto 634 metri e offre panorami incredibili di Tokyo. E' anche uno dei pochi punti in cui si può ammirare il Monte Fuji da Tokyo.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="item.html" class="btn btn-primary">Scopri di più</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <Img src="IMG/kamakura.jpg" class="bd-placeholder-img card-img-top" alt="kamakura" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Kamakura</title><rect width="100%" height="100%" fill="#55595c"></rect><text id="card-title" x="50%" y="50%" fill="#eceeef" dy=".3em">Kamakura</text></img>
+
+            <div class="card-body">
+              <p class="card-text">In direzione sud, a meno di un'ora da Tokyo, si trova Kamakura, un tempo capitale politica del Giappone, famosa per i suoi templi e la sua tradizione letteraria ai sentieri escursionistici.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="IMG/ueno_park.jpg" alt="Parco di Ueno" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"></rect><text id="card-title" x="50%" y="50%" fill="#eceeef" dy=".3em">Parco di Ueno</text></img>
+
+            <div class="card-body">
+              <p class="card-text">Il Parco di Ueno è uno dei cinque parchi pubblici più antichi del Giappone. È famoso per lo zoo di Ueno, per i molti musei e la spettacolare fioritura dei ciliegi in primavera..</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="IMG/akihabara.jpg" alt="Akihabara" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"></rect><text id="card-title" x="50%" y="50%" fill="#eceeef" dy=".3em">Akihabara</text></img>
+
+            <div class="card-body">
+              <p class="card-text">Un tempo ad Akihabara potevi trovare tutti i gadget e le novità elettroniche, oggi trovi un insieme di grandi catene di negozi di elettronica, maid café e tutto ciò che riguarda gli anime.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="IMG/shibuya.jpg" alt="Shibuya" class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"></rect><text id="card-title" x="50%" y="50%" fill="#eceeef" dy=".3em">Shibuya</text></img>
+
+            <div class="card-body">
+              <p class="card-text">Il centro di Shibuya è senza dubbio il cuore e l'anima giovane della città ed è imperdibile per chiunque si trovi nella zona di Tokyo. Con le sue attrazioni famose in tutto il mondo, come il celebre incrocio.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 shadow-sm">
+            <img src="IMG/santuario_meiji.jpg" alt="Santuario Maiji"class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#55595c"></rect><text id="card-title" x="50%" y="50%" fill="#eceeef" dy=".3em">Santuario Meiji</text></img>
+
+            <div class="card-body">
+              <p class="card-text">Questo santuario shintoista circondato da una lussureggiante foresta proprio nel cuore di Tokyo  è dedicato all'imperatore Meiji e all'imperatrice Shoken, che ha reso il Giappone una nazione moderna.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                 <a href="#" class="btn btn-primary">Scopri di più</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--fine album card-->
+  
+  <!--page navigation-->
+  <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!--fine page navigation-->
+
+<!--mappa-->
+<div class="container">
+<div id="map"></div>
+
+<!--javascript per la mappa-->
+<script>
+    const map = L.map('map').setView([35.652832, 139.839478], 10);
+
+    const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+var marker = L.marker([35.71409, 139.771971]).addTo(map);
+marker.bindPopup("<b>Parco di Ueno</b><br>Dove ammirare i ciliegi in fiore").openPopup();
+var marker = L.marker([35.7100876, 139.8106698]).addTo(map);
+marker.bindPopup("<b>Tokyo skytree</b><br>da qui si vede il monte fuji.").openPopup();
+var marker = L.marker([35.329564, 139.54442]).addTo(map);
+marker.bindPopup("<b>Kamakura</b>").openPopup();
+var marker = L.marker([35.702259, 139.774473]).addTo(map);
+marker.bindPopup("<b>Akihabara</b>").openPopup();
+var marker = L.marker([35.658239, 139.705071]).addTo(map);
+marker.bindPopup("<b>Shibuya</b><br>Il cuore della città.").openPopup();
+var marker = L.marker([35.675526, 139.698578]).addTo(map);
+marker.bindPopup("<b>Santuario Meiji</b>").openPopup();
+</script>
+</div>
+
+  <!-- footer -->
+<footer class="footer">
+  <svg class="footer-border" height="14 px" viewBox="0 0 2204 214" fill="none">
+      stroke-width="2" />
+  </svg>
+    
+  <div class="container">
+      <div class="row align-items-center">
+      <div class="col-md-5 text-center text-md-left mb-4">
+          <ul class="list-inline footer-list mb-0">
+            <li class="list-inline-item"><a href="mailto:paolo.Piersigilli@studio.unibo.it" target="_blank"> Paolo Piersigilli</a></li>
+            <li class="list-inline-item"><a href="" target="_blank">Licenza Creative Commmons</a></li>
+          </ul>
+      </div>
+      <div class="col-md-5 text-md-right text-center mb-4">
+          <ul class="list-inline footer-list mb-0">
+          
+          <li class="list-inline-item" style="margin-right: -150px;"><a href="Web_project_plan.html" target="_blank">Web Project Plan</a></li>
+                    
+          </ul>
+      </div>
+      <div class="col-12">
+          <div class="border-bottom border-default"></div>
+      </div>
+      </div>
+      <div class="p-4 text-center footer-list"><strong><a href="https://www.unibo.it/it/studiare/dottorati-master-specializzazioni-e-altra-formazione/insegnamenti/insegnamento/2023/392953" target="_blank">© Corso di Informatica Umanistica, 2025</a></strong></div>
+  </div>
+  </footer>
+</body>
+</html>

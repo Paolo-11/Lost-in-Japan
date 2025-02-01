@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="it">
+  <head>
+  <meta charset="utf-8">
+  <title>Lost in Japan/Homepage</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="lo scopo è quello di dare maggiori informazioni pratiche a tutti coloro che fossero interessati a fare un viaggio in Giappone.">
+  <meta name="author" content="Themefisher Paolo Piersigilli">
+  <meta name="generator" content="Hugo 0.74.3" />
+  
+<!--Main css-->
+  <link rel="stylesheet" href="stile/style.css">
+
+<!--CSS bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <!--Css icon bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!--font link-->
+<link href='https://fonts.googleapis.com/css?family=Afacad' rel='stylesheet'>
+
+<!--Favicon-->
+<link href="IMG/favicon.ico" rel="icon" type="image/x-icon">
+ <!--javascript per il countdown-->
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 23, 2025 11:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+  <!-- Metadati Dublincore -->
+  <link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+  <meta name="DC.Title" content="Viaggio in Giappone">
+  <meta name="DC.Creator" content="Paolo Piersigilli">
+  <meta name="DC.Subject" content="Viaggio in Giappone">
+  <meta name="DC.Description" content="Un aiuto per tutti coloro che vogliono organizzare il proprio viaggio in Giappone ma non sanno bene ancora come muoversi e organizzarsi">
+  <meta name="DC.Publisher" content="Github">
+  <meta name="DC.Date" content="15/01/2025">
+  <meta neme="DC.Format" content="Risorsa digitale">
+  <meta name="DC.Language" content="it">
+
+  <style>
+      #demo {
+      text-align: center;
+      font-size: 70px;
+      margin-top: 0px;
+      border-radius: 15px;
+      background-color: ;
+      margin-left: 200px;
+      margin-right: 200px;
+          }
+      body {
+      background-color: #ecd8c6;
+      font-family: 'Afacad';font-size: 22px;
+    }
+    }
+    .card-body{
+      font-size: 18px;
+    }
+    .card-header{
+      font-size: 18px;
+    }
+  </style>
+</head>
+
+<body id="body">
+  <!--barra di navigazione-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="index.html">
+<i class="bi bi-airplane-engines-fill"></i>
+   Lost in Japan</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Alloggi</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Attività
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="attività.html">Tokyo</a>
+          <a class="dropdown-item" href="#">Kyoto</a>
+          <a class="dropdown-item" href="#">Osaka</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+          Prima di partire
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Budget</a>
+          <a class="dropdown-item" href="#">Accesso a Internet</a>
+          <a class="dropdown-item" href="#">Cambio di valuta</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="chi_siamo.html">Chi siamo</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Cerca qui</button>
+    </form>
+  </div>
+</nav>
+<!--fine navigation bar-->
+
+<!--carosello-->
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item">
+        
+        <img src="IMG/fioritura_giappone.jpg" alt="fioritura giappone">
+        <svg class="width=100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"> </text></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-left">
+            <h1>Inizia a sognare il tuo viaggio in Giappone</h1>
+            <p>Scopri chi siamo</p>
+            <p><a class="btn btn-lg btn-primary" href="chi_siamo.html">Scopri di più</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="IMG/Shibuya_japan.jpg" alt="Shibuya Giappone">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"> </text></svg>
+
+        <div class="container">
+          <div class="carousel-caption">
+            <h1>Un aiuto per pianificare il viaggio</h1>
+            <p>Tutto ciò che devi sapere prima di partire</p>
+            <p><a class="btn btn-lg btn-primary" href="pianificare.html">Scopri di più</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item active">
+        <img src="IMG/lanterne.jpg" alt="lanterne">
+        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label=" :  " preserveAspectRatio="xMidYMid slice" focusable="false"><title> </title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em"> </text></svg>
+
+        <div class="container">
+          <div class="carousel-caption text-right">
+            <h1>Tutto quello che non puoi assolutamente perderti</h1>
+            <p>Tutte le migliori attività le trovi qui</p>
+            <p><a class="btn btn-lg btn-primary" href="attività.html">Scopri di più</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+  <!--fine carosello-->
+
+<!--introduzione-->
+  <div class="accadue mb-5 word-rotator-title" style="text-align: center;">
+              <h2> <strong> Il vostro viaggio in Giappone inizia qui</strong></h2>
+  </div>
+    <p class="lead" style="text-align:center; padding-right: 300px; padding-left: 300px; font-size: 26px;">
+       Benvenuti in <strong>Giappone</strong>, una terra lontana e affascinante, capace di offrire esperienze uniche a chi decide di venire a scoprirla con i propri occhi.
+       Offrire la <b>migliore esperienza di viaggio</b> al pubblico italiano è lo scopo con il quale nasce Lost in Japan<br><br>
+       Specializzarci in maniera esclusiva su questa destinazione ci permette di affinare tutti gli aspetti di viaggio con in mente un principio guida fondamentale: <b>aiutare il viaggiatore</b>.
+       Il nostro <strong>viaggio in Giappone</strong> è pensato per tutti i viaggiatori, liberi di definire i propri ritmi all’interno di un contesto di <b>organizzazione ed efficienza</b>.
+      <!--fine introduzione-->
+      
+       <br><br>
+    </p>
+<hr class="featurette-divider">
+
+<!--sezione eventi da non perdere-->
+     <div class="row featurette">
+      <div class="col-md-7 order-md-2" style="margin-top:-110px" >
+        <h2 class="featurette-heading"><strong>Eventi da non perdere</strong></span></h2>
+        <h3> <a href="https://www.expo2025.or.jp/en/" target="_blank">EXPO 2025 A OSAKA</a></h3>
+        <p class="lead" style="text-align: left; margin-right:220px">Expo 2025 Osaka si svolgerà sull’isola artificiale di Yumeshima, situata nella baia di Osaka, dalla quale è possibile ammirare una splendida vista sul Mare Interno di Seto.Il simbolo di Expo 2025 Osaka sarà<a href="https://www.youtube.com/watch?v=zC5Q9gwWGtE" target="_blank"> “the Grand Roof – Ring”</a>, il Grande Tetto ad anello, comunemente chiamato “Ring”. Disegnato dall’architetto Fujimoto Sou, progettista dell'Expo, rappresenta la filosofia dell’Esposizione Universale: "Uniti nella diversità".“Designing Future Society for Our Lives” - “Progettare la società futura per le nostre vite” è il tema di Expo 2025 Osaka”: un invito alla comunità internazionale a portare soluzioni concrete per la realizzazione di una società sostenibile, che supporti le idee degli individui e migliori la qualità della vita delle persone.</p>
+      </div>
+       <div class="col-md-5 order-md-1">
+        <img src="IMG/Expo_2025.jpg" alt="Expo 2025" usemap="#expo" style="padding-left: 50px;" class= "bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="1000" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#eee"></rect>
+        </img>
+    </div>
+  </div>
+  <hr class="featurette-divider">
+  <!--fine sezione eventi da non perdere-->
+
+<!--countdown-->
+ <div class="container">
+  <h2 style="text-align:center; font-size: 40px;"> Parti con noi per il prossimo viaggio!</h2>
+<div class="card bg-dark text-white" style="width: 1000px; margin-left: 50px; ">
+  <img src="IMG/Kyoto.jpg" class="card-img" alt="Kyoto campagne" style= "height: 400px;">
+  <div class="card-img-overlay">
+<p id="demo" style="margin-top:80px; padding-bottom: px;"></p>
+  </div>
+</div>
+
+  <!--domande frequenti-->
+  <div class="container" style="margin-top: 100px;">
+
+            <div class="heading heading-border heading-middle-border heading-middle-border-center">
+              <h2><b>Domande Frequenti</b></h2>
+            </div>
+            <p class="lead" style="text-align: center;">
+              Riassumiamo di seguito le domande più frequenti che ci vengono fatte prima di affrontare un viaggio in Giappone</p>
+
+<div class="accordion" id="accordionExample" >
+  <div class="card" >
+    <div class="card-header" id="headingOne" style="background-color:  #d9b08c">
+      <h2 class="mb-0" >
+        <button class="btn btn-link btn-block text-left"  type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color:black;">
+          Quanti contanti devo portarmi? Posso pagare solo con la carta?
+        </button>
+      </h2>
+    </div>
+
+    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body" style="background-color:#dfbd9f">
+       Carte di debito e credito sono sempre più accettate in Giappone ma permangono occasioni in cui è meglio avere con sé dei contanti. Quanti portarne è un discorso piuttosto personale ma considerate un costo variabile dai 10 ai 20 euro per i pranzi mentre a cena con 40-50 euro potrete accedere a gran parte dei ristoranti. Discorso diverso per i locali più particolari o rinomati dove però spesso sarà possibile pagare con carta di credito.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo" style="background-color:  #d9b08c">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="color:black;">
+          In Giappone si parla Inglese?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body" style="background-color:#dfbd9f">
+       Se pianificate di visitare il Giappone dovete sapere che l'inglese è diffuso solo in contesti internazionali. Negli hotel più grandi a Tokyo e Kyoto è spesso abbastanza semplice trovare qualcuno che parli inglese, così come in alcuni ristoranti. Non date però per scontato di riuscire a comunicare in inglese dappertutto.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree" style="background-color:  #d9b08c">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="color:black;">
+          Come ci si sposta in Giappone?
+        </button>
+      </h2>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body" style="background-color:#dfbd9f">
+        Il JR-Pass, là dove presente, è un abbonamento che vi permetterà di spostarvi liberamente sulla capillare rete di treni delle ferrovie JR.  E' indispensabile conservare con cura il JR-Pass poiché non è possibile in alcun modo ottenerne un duplicato.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFour" style="background-color:  #d9b08c">
+      <h2 class="mb-0">
+        <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="color:black;">
+         La città è sicura di notte? 
+        </button>
+      </h2>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body" style="background-color:#dfbd9f">
+        Se pianificate di visitare il Giappone dovete sapere che l'inglese è diffuso solo in contesti internazionali. Negli hotel più grandi a Tokyo e Kyoto è spesso abbastanza semplice trovare qualcuno che parli inglese, così come in alcuni ristoranti. Non date però per scontato di riuscire a comunicare in inglese dappertutto.
+      </div>
+    </div>
+  </div>
+</div>
+<!--fine domande frequenti-->
+
+<!-- footer -->
+<footer class="footer">
+  <svg class="footer-border" height="14 px" viewBox="0 0 2204 214" fill="none">
+      stroke-width="2" />
+  </svg>
+    
+  <div class="container">
+      <div class="row align-items-center">
+      <div class="col-md-5 text-center text-md-left mb-4">
+          <ul class="list-inline footer-list mb-0">
+            <li class="list-inline-item"><a href="mailto:paolo.Piersigilli@studio.unibo.it" target="_blank"> Paolo Piersigilli</a></li>
+            <li class="list-inline-item"><a href="" target="_blank">Licenza Creative Commmons</a></li>
+          </ul>
+      </div>
+      <div class="col-md-5 text-md-right text-center mb-4">
+          <ul class="list-inline footer-list mb-0">
+          
+          <li class="list-inline-item" style="margin-right: -150px;"><a href="Web_project_plan.html" target="_blank">Web Project Plan</a></li>
+                    
+          </ul>
+      </div>
+      <div class="col-12">
+          <div class="border-bottom border-default"></div>
+      </div>
+      </div>
+      <div class="p-4 text-center footer-list"><strong><a href="https://www.unibo.it/it/studiare/dottorati-master-specializzazioni-e-altra-formazione/insegnamenti/insegnamento/2023/392953" target="_blank">© Corso di Informatica Umanistica, 2025</a></strong></div>
+  </div>
+  </footer>
+</body>
+</html>
